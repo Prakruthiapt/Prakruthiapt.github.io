@@ -1,0 +1,368 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9f7f1;  /* Light green background */
+    color: #333; /* Dark text color for contrast */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2e8b57; /* Dark green background for header */
+    padding: 10px 0;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-bar h1 {
+    color: #fff; /* White color for header text */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff; /* White color for links */
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Golden color on hover */
+}
+
+.hero {
+    text-align: center;
+    background-image: url("praks.jpg");
+    height: 150vh;
+    padding: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;  /* White text color */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-image 0.5s ease-in-out;
+    position: relative; /* So we can position the button inside the section */
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    color: #fff; /* White text for the heading */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow for better contrast */
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #fff; /* White color for paragraph text */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Light shadow for readability */
+}
+
+/* Arrow Button inside a circle */
+.arrow-btn {
+    position: absolute;
+    bottom: 20px;  /* Positioning at the bottom */
+    right: 20px;   /* Positioning at the right */
+    font-size: 2em;
+    background-color: #2e8b57;  /* Dark green background */
+    color: white;
+    border: none;
+    border-radius: 50%;  /* Makes the button circular */
+    width: 50px;   /* Set width of the circle */
+    height: 50px;  /* Set height of the circle */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.arrow-btn:hover {
+    background-color: #ffd700; /* Golden color on hover */
+}
+
+/* Apartment Details Section */
+.apartment-details {
+    padding: 50px;
+    background-color: #ffffff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.apartment-details h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.scrollable-box {
+    max-height: 300px;  /* Set the max height for the scrollable box */
+    overflow-y: auto;   /* Enables vertical scrolling */
+    padding: 15px;
+    background-color: #f7f7f7;  /* Light gray background for the scrollable box */
+    border-radius: 5px;
+    border: 1px solid #ddd; /* Light border around the scrollable box */
+}
+
+/* Floor Plan Section */
+.floor-plan {
+    padding: 50px;
+    text-align: center;
+    background-color: #ffffff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.floor-plan h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.floor-plan-image {
+    width: 100%;
+    max-width: 800px; /* Limit the max width */
+    height: auto;
+    border-radius: 8px; /* Rounded corners for the image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* WhatsApp Contact Section */
+.whatsapp-contact {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #25d366; /* WhatsApp green */
+    padding: 10px 15px;
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-contact p {
+    margin-right: 10px;
+}
+
+.whatsapp-icon {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.whatsapp-icon i {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.whatsapp-contact:hover {
+    background-color: #128c7e; /* Darker green on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #2e8b57; /* Dark green background for footer */
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    color: #fff; /* White text for footer */
+    font-size: 1em;
+}
+
+/* Additional Styles for Small Devices (Mobile) */
+@media (max-width: 768px) {
+    .nav-bar h1 {
+        font-size: 1.5em;
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-bar ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 30px;
+    }
+
+    .apartment-details {
+        padding: 30px;
+    }
+
+    .scrollable-box {
+        max-height: 200px;
+    }
+
+    .floor-plan-image {
+        max-width: 100%;  /* Ensure image takes full width on small devices */
+    }
+
+    .whatsapp-contact {
+        bottom: 10px;
+        right: 10px;
+        flex-direction: column;
+    }
+}
+
+
+/* Boxes Container */
+.boxes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* Each Box */
+.box {
+    flex: 0 0 48%;  /* Take 48% of the width */
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Left-aligned Boxes */
+.box.left {
+    text-align: left;
+}
+
+/* Right-aligned Boxes */
+.box.right {
+    text-align: right;
+}
+
+/* Title for Each Box */
+.box h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Paragraph inside the box */
+.box p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #2e8b57; /* Dark green background for footer */
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    color: #fff; /* White text for footer */
+    font-size: 1em;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    .box {
+        flex: 0 0 100%; /* Make the boxes take full width on small screens */
+    }
+}
+
+
+.contact-card {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* FAQ Section */
+.faq {
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+    font-size: 1.4em;
+    color: #333;
+}
+
+.faq-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Contact Info Section */
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.contact-icon {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.contact-icon p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-icon {
+        margin-bottom: 20px;
+    }
+}

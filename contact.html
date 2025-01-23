@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Contact Us</title>
+    <style>
+      
+
+        /* Flex container to hold form and aside side by side */
+        .content-wrapper {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 20px;
+            gap: 20px; /* Adds space between form and aside */
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        label {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+            color: #333;
+        }
+
+        textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .form-container a {
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 14px;
+            text-align: center;
+            display: block;
+            margin-top: 15px;
+        }
+
+        .form-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <h1>Prakruthi Apartments</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Flex container to hold form and aside side by side -->
+    <div class="content-wrapper">
+        
+        <!-- Contact Form -->
+        <div class="form-container">
+            <h1>Contact Us</h1>
+            <form action="https://formspree.io/f/xannlblk" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <input type="submit" value="Send Message">
+            </form>
+            <a href="mailto:owner@example.com">Or email us directly</a>
+        </div>
+
+        <!-- Aside with Contact Info -->
+        <aside>
+            
+            <h3>Contact Details</h3>
+            <br>
+            <p><strong>Phone:</strong> 99801 00413</p>
+            <br>
+            <p><strong>Email:</strong> <a href="mailto:rvinfra24@gmail.com">rvinfra24@gmail.com</a></p>
+            <br>
+            <p><strong>Apartment Location:</strong># 29/30,MEDAHALLI,NEAR RTO OFFICE,OLD MADRAS ROAD,MANJUNATHA LAYOUT,VIRGONAGAR,BENGALURU-560049 </p>
+            <br>
+            <p><strong>Office Location:</strong># 9,BALAJI LAYOUT,SGR DENTAL COLLEGE ROAD,MARATHALLI LAYOUT,BENGULURU-560037</p>
+            
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p> 2024 Prakruthi Apartments. All rights reserved.</p>
+    </footer>
+</body>
+</html>
